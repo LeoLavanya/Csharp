@@ -1,0 +1,78 @@
+<html>
+    <!-- Head -->
+    <head>
+        <title>JavaScript Assignment</title>
+        <link rel="stylesheet" href="CSS/Style.css">  
+        <script src = "JavaScript/ScriptFile.js"></script>
+    </head>
+
+    <!-- Body -->
+    <body>
+        <h1>Submit Your Application</h1>
+        <h2>for .NET Developer(Fresher)</h2>
+        <br>
+
+        <h3>Personal Information</h3>
+        <form >
+            <p>Name as per ID Proof <span class = "star">*</span></p>
+            <input type = "text" id = "name" name = "Name">
+            <label id = "labelName" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Father's Name</p>
+            <input type = "text" id = "fatherName" name = "FatherName">
+            <label id = "labelFathersName" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Email</p>
+            <input type = "text" id = "mailId" name = "MailID">
+            <label id = "labelMailId" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Date of Birth</p>
+            <input id = "dateOfBirth" type = "text"  name = "DOB" placeholder = "mm-dd-yyyy">
+            <label id = "labeldob" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Mobile No</p>
+            <input type = "text" id = "phNumber" name = "MobileNumber">
+            <label id = "labelPhNo" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Current Adress</p>
+            <input type = "text" id = "currentAddress1"  placeholder = "Address line 1" >
+            <label id = "labelAddress1" style="color: red; visibility:hidden ;">Invalid</label>
+            <input type = "text" id = "currentAddress2"  placeholder = "Address line 2" >
+            <label id = "labelAddress2" style="color: red; visibility:hidden ;">Invalid</label>
+            <input type = "text" id = "currentCity"  placeholder = "city" >
+            <label id = "labelCity" style="color: red; visibility:hidden ;">Invalid</label>
+            <select class = "addr" >
+                <option value = TamilNadu >TamilNadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerla">Kerla</option>
+                <option value="AndhraPradesh">AndhraPradesh</option>
+            </select>
+            <input type = "text" id = "currentPinCode" placeholder = "Zip Code">
+            <label id = "labelAddress" style="color: red; visibility:hidden ;">Invalid</label>
+
+            <p>Permanant Adress</p>
+            <p class = final ><input id = "sameAddress" type ="checkbox"> Same as currentAddress </p>
+            <input type = "text" id = "permanantAddress1" placeholder = "Address line 1">
+            <input type = "text" id = "permanantAddress2" placeholder = "Address line 2">
+            <input type = "text" id = "permanantCity" placeholder = "city">
+            <select>
+                <option value = TamilNadu >TamilNadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerla">Kerla</option>
+                <option value="AndhraPradesh">AndhraPradesh</option>
+            </select>
+            <input type = "text" id = "permanantPinCode" placeholder = "Zip Code">
+            <button type ="button" id = "next" onclick="callAllValidation()">Next</button>
+
+            <p class = "final">
+                Upload Profile Photo (JPEG/PNG Format Only)<br>
+                Please Upload a Photo of yourself.Your face should be clearly visible. Make sure the image size does not exceed 500kB.
+            </p>
+
+            <input type ="file" id = "photo" ><br><br>
+            <button type ="button" id = "next" onclick="callAllValidation()">Next</button>
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Online Course</title>
+        <link rel = "stylesheet" href="Style/StyleSheet.css">
+        <script src = "TypeScript/ScriptFile.js"></script>
+    </head>
+
+    <body>
+        <div id = "homePage">
+            <h1>Welcome To Online Learning Courses</h1><br>
+            <h3>Plese Select your Option</h3>
+            <button type = "button" onclick="registrationProcess()">Registration</button>
+            <button type = "button" onclick="loginProcess()">Login</button>
+        </div>
+
+        <div id = "registrationProcess">
+            <h3>Welcome to the Registration Process </h3>
+            <p>Name:</p>
+            <input type="text" id = "newUserName" ><br><br>
+
+            <p>Age:</p>
+            <input type="text" id = "newUserAge" ><br><br>
+
+            <p>Mobile Number:</p>
+            <input type="text" id = "newUserMobileNumber" ><br><br>
+            <button type = "submit" id = "completeRegistration" onclick = "registrationStep()">Submit</button>
+            <!-- <label id="greet"></label><button onclick="displayTheHomePage()">Go Home</button><br> -->
+        </div>
+        
+        <div id = "loginProcess">
+            <h3>Welcome to the Login Page </h3>
+            <p>User ID:</p>
+            <input type="text" id = "userId" ><br><br>
+
+            <button type = "submit" id = "viewCourseDetail" onclick = "courseDetails()">LogIn</button>
+        </div>
+
+        <div id = "courseDetails">
+            <h3>Welcome to the check Available Courses Page </h3>
+            <p>Available Courses</p>
+            <button type = "submit" id = "courseAvailable" onclick = "viewAvailableCourses()">Check</button><br><br>
+            <p>Enrolled Course Details</p>
+            <button type = "submit" id = "courseEntrolled" onclick="viewEntrolledLists()">Check</button>
+        </div>
+    </body>
+</html>
